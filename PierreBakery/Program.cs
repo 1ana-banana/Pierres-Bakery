@@ -18,9 +18,9 @@ namespace PierreBakeryUI
       Console.WriteLine(".:*~*:._.:*~*:._.:*~*:._.:*~*");
       Console.WriteLine("Milk Bread: Buy 2 Loaves, get one FREE");
       Console.WriteLine("Buy 3 Quiche for $5");
-      Console.WriteLine("Enter your order, Type [Bread] or [Pastry]");
+      Console.WriteLine("Enter your order, Type [Bread] or [Quiche]");
       string order = Console.ReadLine().ToLower();
-      Console.WriteLine("We have your order: " + " " + order + "Please enter the quantity you would like to purchase.");
+      Console.WriteLine("Thank you! We have the following order: " + " " + order + " How many would you like to purchase?");
       int quantity = int.Parse(Console.ReadLine());
       if (quantity == 1 && order == "bread") {
         Bread newBread = new Bread(5, 1);
