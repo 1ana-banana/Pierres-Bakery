@@ -22,5 +22,15 @@ namespace PierreBakery.Tests
       int result = newBread.GetPrice();
       Assert.AreEqual(total, result);
     }
+    [TestMethod]
+    public void GetDiscount_ReturnsTotalCost_Int()
+    {
+      int price = 5;
+      int quantity = 10;
+      int total = 35;
+      Bread newBread = new Bread(price, quantity);
+      int result = newBread.GetDiscount();
+      Assert.AreEqual(total, result);
+    }
   }
 }
